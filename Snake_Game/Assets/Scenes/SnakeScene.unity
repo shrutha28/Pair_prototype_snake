@@ -1449,6 +1449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segmentPrefab: {fileID: 327937552510803694, guid: ce5b86c94b13e5f42910d0398c5fe87c, type: 3}
   initialSize: 2
+  pullRange: 5
+  pullStrength: 30
 --- !u!1 &1245302614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1556,25 @@ RectTransform:
   m_AnchoredPosition: {x: 28.4932, y: 0.6629}
   m_SizeDelta: {x: 1093.4402, y: 997.0195}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1416359260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5333600474586693751, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+  m_PrefabInstance: {fileID: 1348114270061820742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1416359261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416359260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a0bf6567e01421faed603e3e479e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlanetPrefab: {fileID: 1416359260}
+  gridArea: {fileID: 177837908}
 --- !u!1 &1656645677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2152,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098678843}
   m_CullTransparentMesh: 1
+--- !u!1001 &1348114270061820742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.5354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.447
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.6823
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.8865
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909612109978882234, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333600474586693751, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      propertyPath: m_Name
+      value: Planet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5333600474586693751, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1416359261}
+  m_SourcePrefab: {fileID: 100100000, guid: caac9589a1dbb4222977e28f6ae53e96, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2146,3 +2235,4 @@ SceneRoots:
   - {fileID: 1245302618}
   - {fileID: 790648145}
   - {fileID: 1656645679}
+  - {fileID: 1348114270061820742}
