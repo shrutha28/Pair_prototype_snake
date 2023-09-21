@@ -62,6 +62,6 @@ public class FoodScript : MonoBehaviour
         {
             foodCount = foodCount - 2;
         }
-        UpdateFoodCountText();
+        UpdateFoodCountText(); 
     }
 }

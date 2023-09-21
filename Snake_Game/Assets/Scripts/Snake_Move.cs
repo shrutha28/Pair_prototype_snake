@@ -19,7 +19,6 @@ public class Snake_Move : MonoBehaviour
     public float moveSpeed = 0.6f; // Time in seconds between each move
     private float moveTimer = 0.0f; // Timer to keep track of movement
 
-
     public void AttractToPosition(Vector3 targetPosition, Vector2 force)
     {
         Vector2 direction = (targetPosition - transform.position).normalized;
@@ -55,24 +54,26 @@ public class Snake_Move : MonoBehaviour
         }
 
         if (isPaused) return;
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            _direction = Vector2.up;
+      
+      
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                _direction = Vector2.up;
+            }
+            else if (Input.GetKeyDown(KeyCode.S))
+            {
+                _direction = Vector2.down;
+            }
+            else if (Input.GetKeyDown(KeyCode.A))
+            {
+                _direction = Vector2.left;
+            }
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
+                _direction = Vector2.right;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            _direction = Vector2.down;
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            _direction = Vector2.left;
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            _direction = Vector2.right;
-        }
-    }
+    
 
     public void FixedUpdate()
     {
@@ -132,6 +133,7 @@ public class Snake_Move : MonoBehaviour
             ShowGameOverScreen();
 
         }
+  
     }
     public void ResetforObst()
     {

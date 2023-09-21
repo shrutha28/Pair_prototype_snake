@@ -20,7 +20,7 @@ public class CircleObstacleScript : MonoBehaviour
         if (other.tag == "Player")
         {
             Vector2 direction = transform.position - other.transform.position;
-            other.GetComponent<Snake_Move>().AttractToPosition(transform.position, direction.normalized * attractionForce);
+            other.GetComponent<Snake_Move>().AttractToPosition(transform.position, direction.normalized * -attractionForce);
         }
     }
 

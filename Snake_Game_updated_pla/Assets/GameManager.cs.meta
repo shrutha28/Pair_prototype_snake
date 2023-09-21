@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1f25845d7e7e3be459ce8487c39a82e7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - timerText: {instanceID: 0}
+  - foodCountText: {instanceID: 0}
+  - gameOverPanel: {fileID: 6352217674170432171, guid: 0865cf88ac2a3467e8d6ca8eabcc0f11, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
